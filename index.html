@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4f8eb7726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imgs/image.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphic Designer</p>
+                <h1>Hi, I'm <span>Lucky</span><br>Kenya</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------about-------------------->
+   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="imgs/kofia.jpg" >
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Vickie Lucky, a passionate graphic designer and web developer with a keen eye for detail and creativity. I specialize in creating visually appealing designs and functional websites that blend aesthetics with seamless user experiences. With expertise in both front-end development and graphic design, I strive to bring innovative ideas to life, whether it’s through unique branding elements, responsive web layouts, or captivating visuals. My goal is to create engaging digital experiences that resonate with users and deliver impactful results</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skillls</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021</span><br>Computer systems and Applications </li>
+                            <li><span>2022</span><br>Worked in a University of Technology as an Interim Tech Personel </li>
+                            <li><span>2023</span><br>Working at Adobe Company as a Graphic Designer upto date</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2007-2013</span><br> Primary & Basic Education</li>
+                            <li><span>2014-2018</span><br> High School</li>
+                            <li><span>2019-2022</span><br>University of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------------services-------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in creating visually appealing designs and functional websites that blend aesthetics with seamless user experiences.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I strive to bridge the gap between functionality and visual storytelling. My goal is to craft intuitive interfaces that not only look great but also deliver seamless experiences, ensuring users can interact with products effortlessly.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>I am an enthusiastic app designer with a strong passion for crafting intuitive, engaging, and visually stunning mobile experiences</p>
+                <a href="">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--------------------------Portifolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imgs/social2.jpg" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imgs/MUS.jpg" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app brings you the latest hits of all variety, to keep your music at top. Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imgs/online shop.jpg" >
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app enables you to shop online without going to stores . Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------contact---------------------->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@vickielucky</p>
+            <p><i class="fa-solid fa-square-phone"></i>+254 757 179 687</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="imgs/Victor Murithi CV.docx" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form action="https://formspree.io/f/xyzywely" method="post">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @vickielucky projects <i class="fa-solid fa-heart"></i></p>
+</div>
+</div>
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+           for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+           }
+           for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+
+    fetch('https://formspree.io/f/xyzywely', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('success-message').style.display = 'block';
+        this.reset();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
